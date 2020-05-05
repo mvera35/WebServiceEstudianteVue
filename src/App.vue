@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <tablaEstudiantes/>
+    <tablaCursos/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
+import tablaCursos from './components/tablaCursos'
+import tablaEstudiantes from './components/tablaEstudiantes'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    tablaCursos,
+    tablaEstudiantes
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
