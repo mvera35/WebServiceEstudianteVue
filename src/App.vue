@@ -1,29 +1,32 @@
 <template>
-  <div id="app">
-    <tablaEstudiantes/>
-    <tablaCursos/>
+<div id="app">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+        <router-link to="/estudiantes">
+          Estudiantes
+        </router-link>
+
+        <router-link to="/cursos">
+          Cursos
+        </router-link>
+      </div>
+      <div class="col-lg-10">
+        <router-view>
+
+        </router-view>
+      </div>
+    </div>
   </div>
+
+</div>
 </template>
 
 <script>
-import tablaCursos from './components/tablaCursos'
-import tablaEstudiantes from './components/tablaEstudiantes'
 export default {
-  name: 'App',
-  components: {
-    tablaCursos,
-    tablaEstudiantes
-  }
+  name: 'App'
 }
 </script>
 
 <style scoped>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
