@@ -4,9 +4,12 @@
   "description": "Servicio web de Estudiantes",
   "author": "mvera35@uabc.edu.mx",
   "private": true,
+  "engines":{
+    "node": "13.14.0"
+  },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "node server.js",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
